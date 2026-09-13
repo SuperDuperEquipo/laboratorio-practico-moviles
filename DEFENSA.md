@@ -16,6 +16,6 @@ De igual manera, los datos entran solo por el constructor (`name`, `studentId`, 
 Si en su lugar se hubiera usado un método, el widget no sería independiente, puesto que seguiría atado a la clase que lo contiene y no se podría reutilizar sin copiar el método completo. Al ser una clase, `StudentTile` puede probarse y reutilizarse de forma independiente. 
 
 ## Consultas realizadas a la IA 
-Para esta actividad las consultas realizadas fueron,
+Para esta actividad las consultas realizadas fueron:
 - Mejoras en la redacción de textos 
-- Correción de errores como: Error `FormatException: Unexpected end of input` al ejecutar `flutter analyze` 
+- Corrección de errores como: Error `FormatException: Unexpected end of input` al ejecutar `flutter analyze` 
