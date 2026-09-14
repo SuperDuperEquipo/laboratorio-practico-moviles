@@ -8,6 +8,9 @@ Se eligió esta ubicación, porque tres partes distintas de la interfaz necesita
 
 ## Pregunta 2 - Reconstrucción de widgets
 ### ¿Qué se reconstruye cuando el usuario cambia un solo registro, y qué hizo, si hizo algo, para que no se reconstruya de más?
+Cuando el usuario cambia el estado de un estudiante desde el Switch, se ejecuta setState() dentro del State de la pantalla, lo que provoca que Flutter vuelva a correr todo el método build(). Por eso se reconstruyen tanto el AttendanceHeader como el GlobalActions y todas las filas del ListView.builder, aunque solo un estudiante haya cambiado.
+
+No se aplicó ninguna optimización para evitar estas reconstrucciones. Ni el AttendanceHeader, ni GlobalActions, ni StudentTile usan const en su instanciación, porque todos reciben datos que cambian (presentCount, isPresent, etc.), así que Flutter no puede aplicar esa optimización. Sin embargo, se utilizó ListView.builder que solo construye las filas visibles en la pantalla, no todas a la vez.
 
 ## Pregunta 3 - Extracción de componente
 ### ¿Qué componente extrajo, con qué criterio, y qué habría pasado si hubiera usado un método en lugar de una clase?

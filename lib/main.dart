@@ -18,7 +18,7 @@ class AttendanceApp extends StatelessWidget {
     return MaterialApp(
       title: 'Asistencia',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 161, 108, 229)),
       ),
       home: const AttendanceScreen(groupName: 'Grupo 2'),
     );
