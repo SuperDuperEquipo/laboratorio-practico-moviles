@@ -22,4 +22,5 @@ Si en su lugar se hubiera usado un método, el widget no sería independiente, p
 Para esta actividad las consultas realizadas fueron:
 - Mejoras en la redacción de textos 
 - Corrección de errores como: Error `FormatException: Unexpected end of input` al ejecutar `flutter analyze`
-- Consulta sobre la diferencia de usar una función suelta o una extension para aplicar las acciones grupales a la lista de estudiantes
+- Aceleración de la construcción del renderizado dinámico (ListView.builder) para la vista principal.
+- Refactorización asistida del test por defecto de Flutter para alinearlo con el flujo de datos actual.
