@@ -19,18 +19,14 @@ class GlobalActions extends StatelessWidget {
         children: [
           Expanded(
             child: ElevatedButton(
-              onPressed: () {
-                onMarkAllPresent();
-              },
+              onPressed: onMarkAllPresent,
               child: const Text('Todos presentes'),
             ),
           ),
           const SizedBox(width: 8),
           Expanded(
             child: ElevatedButton(
-              onPressed: () {
-                onReset();
-              },
+              onPressed: onReset,
               child: const Text('Restablecer'),
             ),
           ),

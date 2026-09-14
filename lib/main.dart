@@ -21,6 +21,7 @@ class AttendanceApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const AttendanceScreen(groupName: 'Grupo 2'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
